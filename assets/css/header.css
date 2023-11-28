@@ -1,15 +1,57 @@
 .app-header {
     display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .app-header-photo {
-
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
 }
 
 .app-header-title {
-
+    font-family: 'Neue Machina';
+    text-align: center;
 }
 
 .app-header-details {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+}
 
+.app-header-details p {
+    margin: 0.5rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 1.125rem;
+}
+
+.app-header-details p::before {
+    content: '';
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-right: .5rem;
+}
+
+.app-header-details .job::before {
+    background-image: url('/assets/img/icons/job.svg');
+}
+
+.app-header-details .email::before {
+    background-image: url('/assets/img/icons/email.svg');
+}
+
+.app-header-details .location::before {
+    background-image: url('/assets/img/icons/location.svg');
+}
+
+.app-header-details .number::before {
+    background-image: url('/assets/img/icons/number.svg');
 }
