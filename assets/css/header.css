@@ -55,3 +55,24 @@
 .app-header-details .number::before {
     background-image: url('/assets/img/icons/number.svg');
 }
+
+@media only screen and (min-width: 768px) {
+    .app-header {
+        display: grid;
+        grid-template-areas: 
+        "photo title"
+        "photo details";
+    }
+    .app-header-photo {
+        grid-area: photo;
+        margin: 0 auto;
+    }
+    .app-header-title{
+        grid-area: title;
+        text-align: start;
+        max-width: 250px;
+    }
+    .app-header-details{
+        grid-area: details;
+    }
+}
