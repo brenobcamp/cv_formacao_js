@@ -1,12 +1,14 @@
-const abaSkils = document.querySelector('.app-acordeon-skills');
-let visilidadeAbaSkills = true;
+const acordeonTriggers = document.querySelectorAll(".acordeon .trigger");
 
-abaSkils.addEventListener('click', () => {
-    const divHabilidadesProfissionais = document.createElement('div');
-    divHabilidadesProfissionais.className = 'app-acordeon-skills-habilidades-profissionais'
-    divHabilidadesProfissionais.innerHTML += '<h2>Habilidades Profissionais</h2><br><img src="./assets/img/icons/job.svg">'
-    console.log('click')
-    abaSkils.appendChild(divHabilidadesProfissionais)
-    
-    
+acordeonTriggers.forEach((trigger) => {
+    trigger.addEventListener('click', (e) => {
+        const acordeon = trigger.parentElement
+        const isOpen = acordeon.classList.contains('open')
+        
+        if (isOpen) {
+            acordeon.classList.remove('open')
+        } else{
+        acordeon.classList.add('open')
+        }
+    })
 })

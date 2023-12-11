@@ -5,6 +5,12 @@
     border: 1px solid white;
     border-radius: 1rem;
     margin: 1rem 0;
+    transition: 0.25s;
+}
+
+.acordeon.open, .acordeon:hover {
+    background-color: #55569E;
+    border-color: #55569E;
 }
 
 .acordeon .trigger {
@@ -16,6 +22,12 @@
     color: white;
     border: none;
     font-weight: 700;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.acordeon .trigger:hover {
+    cursor: pointer;
 }
 
 .acordeon .trigger::after{
@@ -26,8 +38,21 @@
     background-repeat: no-repeat;
     background-size: contain;
     background-image: url('/assets/img/icons/arrow.svg');
+    transition: 0.25s;
+}
+
+.acordeon.open .trigger::after {
+    transform: rotate(180deg);
 }
 
 .acordeon .content {
-    display: none;
+    overflow: hidden;
+    height: 0;
+    opacity: 0;
+    transition: opacity .25s ease-in-out;
+}
+.acordeon.open .content {
+    display: inline-block;
+    height: auto;
+    opacity: 1;
 }
