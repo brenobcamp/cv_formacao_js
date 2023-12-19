@@ -40,6 +40,10 @@
     background-image: url('/assets/img/icons/arrow.svg');
     transition: 0.25s;
 }
+.acordeon .trigger h2{
+    margin: 0;
+    font-size: 1.5rem;
+}
 
 .acordeon.open .trigger::after {
     transform: rotate(180deg);
@@ -52,8 +56,9 @@
     transition: opacity .25s ease-in-out;
 }
 .acordeon.open .content {
-    display: inline-block;
+    display: block;
     height: auto;
+    padding: 0 1rem 1rem 1rem;
     opacity: 1;
     padding: 1rem;
 }

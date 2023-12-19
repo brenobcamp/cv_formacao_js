@@ -14,25 +14,50 @@
     <link rel="stylesheet" href="./assets/css/header.css">
     <link rel="stylesheet" href="./assets/css/acordeon.css">
     <link rel="stylesheet" href="./assets/css/languages.css">
+    <link rel="stylesheet" href="./assets/css/portfolio.css">
+    <link rel="stylesheet" href="./assets/css/experience.css">
+    <link rel="stylesheet" href="./assets/css/skills.css">
 
     <script src="/assets/js/main.js" defer></script>
 
 </head>
 <body>
-<div class="main">
+<main class="main">
     <header class="app-header">
         <img src="assets/img/compressed-perfil.jpeg" alt="Foto de Breno B Campos" class="app-header-photo">
         <h1 class="app-header-title">Olá,<br> eu sou Breno B. Campos</h1>
         <div class="app-header-details">
-            <p class="app-header-details job">Software Development Inter at NTT DATA</p>
+            <p class="app-header-details job">Software Development Intern em NTT DATA</p>
             <p class="app-header-details location">São Paulo - BR</p>
-            <p class="app-header-details number">(91) 99999-9999</p>
-            <p class="app-header-details email">brenobatistacampos@gmail.com</p>
-
+            <p class="app-header-details number"><a href="tel:(91) 99999-9999">(91) 99999-9999</a></p>
+            <p class="app-header-details email"> <a href="mailto:brenobatistacampos@gmail.com">brenobatistacampos@gmail.com</a></p>
         </div>
     </header>
     <section class="acordeon">
-        <button class="trigger" type="button">Idiomas</button>
+        <button class="trigger" type="button"><h2>Skills</h2></button>
+        <div class="content">
+            <div class="skills">
+            <section class="tools">
+                <h3>Ferramentas:</h3>
+                <ul>
+                    <li><img src="./assets/img/icons/python.svg" alt="python" title="python"></li>
+                    <li><img src="./assets/img/icons/react.svg" alt="react" title="react"></li>
+                    <li><img src="./assets/img/icons/java.svg" alt="java" title="java"></li>
+                </ul>
+            </section>
+            <section class="personal">
+                <h3>Habilidades pessoais</h3>
+                <ul>
+                    <li>Organização</li>
+                    <li>Liderança</li>
+                    <li>Trabalho em Equipe</li>
+                </ul>
+            </section>
+        </div>
+        </div>
+    </section>
+    <section class="acordeon">
+        <button class="trigger" type="button"><h2>Idiomas</h2></button>
         <div class="content">
             <ul class="languages">
                 <li>Português</li>
@@ -40,9 +65,30 @@
                 <li>Espanhol</li>
             </ul>
         </div>
-    
-    
     </section>
-</div>
+    <section class="acordeon">
+        <button class="trigger" type="button"><h2>Portfólio</h2></button>
+        <div class="content">
+            <ul class="portfolio">
+                <li>
+                    <h3 class="title github">Criando App de Lembrete</h3>
+                    <a href="https://www.google.com" target="_blank">www.google.com</a>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section class="acordeon">
+        <button class="trigger" type="button"><h2>Experiência Profissional</h2></button>
+        <div class="content">
+            <ul class="experience">
+                <li>
+                    <h3>Software Development Intern / NTT DATA</h3>
+                    <span class="period">Nov 2022 - Presente</span>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi, officiis?</p>
+                </li>
+            </ul>
+        </div>
+    </section>
+</main>
 </body>
 </html>
