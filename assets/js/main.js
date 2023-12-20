@@ -43,7 +43,6 @@ function updateLanguages(profileData) {
 
 function updatePortfolio (profileData) {
     const ulPortfolio = document.querySelector('.portfolio')
-    console.log(ulPortfolio)
     profileData.portfolio.forEach(element => {
         if (element.github){
             const newItemPortfolio = `<li>
