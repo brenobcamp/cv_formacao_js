@@ -47,7 +47,7 @@ function updatePortfolio (profileData) {
         if (element.github){
             const newItemPortfolio = `<li>
         <h3 class="title github">${element.name}</h3>
-        <a href="${element.url}" target="_blank">www.google.com</a>
+        <a href="${element.url}" target="_blank">${element.url}</a>
         </li>`
         ulPortfolio.innerHTML += newItemPortfolio
     } else {
