@@ -48,7 +48,7 @@
     background-image: url('/assets/img/icons/email.svg');
 }
 
-.app-header-details .location::before {
+.app-header-details .loc::before {
     background-image: url('/assets/img/icons/location.svg');
 }
 
