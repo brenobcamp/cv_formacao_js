@@ -1,7 +1,7 @@
 {
     "name": "Breno B Campos",
     "photo": "https://avatars.githubusercontent.com/u/108765626?v=4",
-    "job": "Software Developmento Intern em NTT DATA",
+    "job": "Software Development Intern em NTT DATA",
     "location": "São Paulo - SP",
     "phone": "(91) 99999-9999",
     "email": "brenobatistacampos@gmail.com",
@@ -51,7 +51,7 @@
     ],
     "professionalExperience": [
       {
-        "name": "Software Development Intern em NTT Ltd.",
+        "name": "Software Development Intern em NTT DATA",
         "period": "2022 - até o momento",
         "description": "Estagiário na área de Web Applications. Ferramentas utilizadas: Javascript, React, MongoDB"
       },
