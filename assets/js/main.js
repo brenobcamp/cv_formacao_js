@@ -80,4 +80,5 @@ function updateExperiencia (profileData) {
     updateLanguages(profileData)
     updatePortfolio(profileData)
     updateExperiencia(profileData)
+    console.log(profileData)
 })()
