@@ -41,19 +41,19 @@
 }
 
 .app-header-details .job::before {
-    background-image: url('assets/img/icons/job.svg');
+    background-image: url('/assets/img/icons/job.svg');
 }
 
 .app-header-details .email::before {
-    background-image: url('assets/img/icons/email.svg');
+    background-image: url('/assets/img/icons/email.svg');
 }
 
 .app-header-details .loc::before {
-    background-image: url('assets/img/icons/location.svg');
+    background-image: url('/assets/img/icons/location.svg');
 }
 
 .app-header-details .number::before {
-    background-image: url('assets/img/icons/number.svg');
+    background-image: url('/assets/img/icons/number.svg');
 }
 
 @media only screen and (min-width: 768px) {
